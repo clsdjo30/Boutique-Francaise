@@ -11,11 +11,11 @@
 <div class="example-wrapper">
 
     <h1>Mon compte </h1>
-    Bienvenue {{ app.user.firstname}} dans votre compte.<br>
+    Bienvenue {{ app.user.firstname | capitalize}} dans votre compte.<br>
     C'est ici que vous allez pouvoir gérer vos informations personnelles.
 <hr>
-    - modifier mon mt de passe
-    - Ajouter mes adresses
+    - <a href="{{path('app_account_password')  }}"> modifier mon mot de passe</a><br>
+    - Ajouter mes adresses <br>
     - mes commandes
 
 </div>
