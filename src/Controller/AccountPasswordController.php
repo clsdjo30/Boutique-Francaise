@@ -40,6 +40,7 @@ class AccountPasswordController extends AbstractController
                 $password = $passwordHasher->hashPassword($this->getUser(), $new_pwd);
                 //dd($password);
                 $this->getUser()->setPassword($password);
+// VErifier pourquoi symf renvoie issue polymorphic call
 
                 //$this->entityManager->persist($user);
                 $this->entityManager->flush();
